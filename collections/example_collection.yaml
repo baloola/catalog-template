@@ -18,7 +18,7 @@ Agency:
   - Example agency
 Resources:
 
-    - EndPoint: https://api.npoint.io/ac0059e595093385bb19
+    - EndPoint: https://raw.githubusercontent.com/baloola/catalog-template/main/sample/sample.json
       Name: GeoJSON source
       Style: crop_forecast_CropOM/style.json
       Bbox: [32, 15, 33, 16]
