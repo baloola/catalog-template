@@ -129,15 +129,15 @@ def process_catalog_file(file_path, options):
                 validate_all(catalog.to_dict(), href=config["endpoint"])
             except Exception as e:
                 print("Issue validation collection: %s" % e)
-
-    with open(file_path) as f:
+    cat_file_path = "%s/%s" % (options.outputpath, config["id"])
+    with open(cat_file_path) as f:
         stac_catalog_content = json.load(f)
     for index, x in enumerate(stac_catalog_content["links"]):
         if x.get("rel") == "self":
             break
     stac_catalog_content["links"][index]["href"] = "https://baloola.github.io/catalog-template/template_catalog/catalog.json"
     # save updated catalog
-    with open(file_path, "w") as f:
+    with open(cat_file_path, "w") as f:
         json.dump(stac_catalog_content, f, indent=2)
 
 def extract_indicator_info(parent_collection):
