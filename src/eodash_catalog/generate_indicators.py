@@ -129,7 +129,7 @@ def process_catalog_file(file_path, options):
                 validate_all(catalog.to_dict(), href=config["endpoint"])
             except Exception as e:
                 print("Issue validation collection: %s" % e)
-    cat_file_path = "%s/%s" % (options.outputpath, config["id"])
+    cat_file_path = "%s/%s/catalog.json" % (options.outputpath, config["id"])
     with open(cat_file_path) as f:
         stac_catalog_content = json.load(f)
     for index, x in enumerate(stac_catalog_content["links"]):
