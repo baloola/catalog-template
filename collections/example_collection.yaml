@@ -21,7 +21,7 @@ Resources:
     - EndPoint: https://raw.githubusercontent.com/baloola/catalog-template/main/sample/sample.json
       Name: GeoJSON source
       Style: crop_forecast_CropOM/style.json
-      Bbox: [32, 15, 33, 16]
+      Bbox: [32.4603398110851984,15.6471980157350004, 2.4772822813213011,15.6828413462549996]
       DataProjection: 4326
       TimeEntries:
         - Time: "20240309"
