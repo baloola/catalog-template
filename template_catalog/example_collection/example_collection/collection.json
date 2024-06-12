@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "example_collection",
+  "stac_version": "1.0.0",
+  "description": "This can be **markdown** or a reference to a markdown file",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//crop_forecast_CropOM/style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "vector_data"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./example_collection/2024/20240309.json",
+      "type": "application/json",
+      "datetime": "20240309",
+      "vector_data": "https://raw.githubusercontent.com/baloola/catalog-template/main/sample/sample.json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Example Collection"
+    }
+  ],
+  "proj:epsg": 4326,
+  "themes": [
+    "example"
+  ],
+  "tags": [
+    "example tag"
+  ],
+  "agency": [
+    "Example agency"
+  ],
+  "subcode": "EX1",
+  "sensor": [
+    "Sensorname"
+  ],
+  "satellite": [
+    "Satellitename"
+  ],
+  "insituSources": [
+    "Other insitu data"
+  ],
+  "endpointtype": "GeoJSON source",
+  "title": "Example Collection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          32.4603398110852,
+          15.647198015735,
+          32.4772822813213,
+          15.682841346255
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-03-09T00:00:00Z",
+          "2024-03-09T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

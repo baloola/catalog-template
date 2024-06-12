@@ -1,0 +1,90 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "20240309",
+  "properties": {
+    "datetime": "2024-03-09T00:00:00Z"
+  },
+  "geometry": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                32.4603398110852,
+                15.647198015735
+              ],
+              [
+                32.4772822813213,
+                15.647198015735
+              ],
+              [
+                32.4772822813213,
+                15.682841346255
+              ],
+              [
+                32.4603398110852,
+                15.682841346255
+              ],
+              [
+                32.4603398110852,
+                15.647198015735
+              ]
+            ]
+          ]
+        },
+        "properties": {}
+      }
+    ]
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//crop_forecast_CropOM/style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "vector_data"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Example Collection"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Example Collection"
+    }
+  ],
+  "assets": {
+    "vector_data": {
+      "href": "https://raw.githubusercontent.com/baloola/catalog-template/main/sample/sample.json",
+      "type": "application/geo+json",
+      "proj:epsg": 4326,
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    32.4603398110852,
+    15.647198015735,
+    32.4772822813213,
+    15.682841346255
+  ],
+  "stac_extensions": [],
+  "collection": "example_collection"
+}
